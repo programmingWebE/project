@@ -1,0 +1,13 @@
+.contacts {
+	position: relative;
+	padding-bottom: 10em;
+}
+
+@media screen and (max-width: 1050px) {
+
+.contacts {
+	padding-bottom: 15em;
+}
+
+}
+

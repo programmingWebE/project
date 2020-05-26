@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>FIN2GO</title>
+
+		<link rel="stylesheet" href="fonts/fonts.css">
+	    <link rel="stylesheet" href="css/owl.carousel.min.css">
+	    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+	    <link rel="stylesheet" href="css/jquery.formstyler.css">
+	    <link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+
+<svg class="svg-about">
+	<clipPath id="my-clip-path" clipPathUnits="objectBoundingBox">
+		<path d="M0.862,0.002 c0.024,-0.004,0.05,-0.001,0.069,0.013 c0.021,0.014,0.032,0.036,0.039,0.057 c0.011,0.035,0.013,0.071,0.013,0.107 c-0.002,0.036,-0.003,0.072,-0.003,0.109 c-0.001,0.018,-0.001,0.035,-0.001,0.053 c0,0.039,0,0.077,0,0.116 c0.001,0.021,0.001,0.043,0.002,0.064 c0.003,0.08,0.007,0.159,0.013,0.239 c0.002,0.023,0.004,0.046,0.005,0.069 c0.001,0.035,0.001,0.072,-0.01,0.106 c-0.006,0.019,-0.017,0.038,-0.035,0.051 c-0.015,0.011,-0.034,0.016,-0.053,0.015 c-0.031,0,-0.061,-0.009,-0.089,-0.02 c-0.032,-0.013,-0.062,-0.03,-0.092,-0.047 c-0.16,-0.09,-0.325,-0.173,-0.494,-0.249 c-0.055,-0.025,-0.114,-0.046,-0.164,-0.08 c-0.023,-0.016,-0.045,-0.034,-0.056,-0.059 c-0.008,-0.017,-0.009,-0.037,-0.001,-0.055 c0.009,-0.022,0.028,-0.04,0.047,-0.056 c0.044,-0.035,0.097,-0.057,0.148,-0.083 C0.362,0.272,0.519,0.185,0.672,0.092 c0.035,-0.021,0.069,-0.044,0.106,-0.062 c0.026,-0.013,0.054,-0.024,0.084,-0.028"></path>
+	</clipPath>
+	
+
+	  <clipPath id="map-clip-path" clipPathUnits="objectBoundingBox"><path d="M0,1 C0.002,0.999,0.004,0.999,0.006,0.998 L0.006,0.998 C0.007,0.998,0.008,0.997,0.009,0.997 C0.038,0.987,0.067,0.975,0.095,0.962 C0.099,0.96,0.103,0.958,0.107,0.956 C0.107,0.956,0.108,0.956,0.108,0.955 C0.148,0.936,0.186,0.913,0.224,0.888 C0.232,0.883,0.24,0.877,0.248,0.872 L0.248,0.872 L0.248,0.872 C0.252,0.869,0.256,0.866,0.26,0.864 C0.289,0.842,0.319,0.821,0.348,0.801 C0.355,0.796,0.363,0.791,0.37,0.786 L0.37,0.786 L0.37,0.786 L0.37,0.786 C0.375,0.783,0.379,0.78,0.383,0.778 C0.401,0.765,0.42,0.754,0.439,0.743 L0.439,0.742 L0.44,0.742 L0.441,0.741 C0.463,0.728,0.486,0.715,0.51,0.707 C0.541,0.696,0.572,0.689,0.604,0.686 C0.606,0.685,0.608,0.685,0.61,0.685 L0.61,0.685 C0.621,0.684,0.632,0.684,0.643,0.685 C0.656,0.686,0.669,0.688,0.682,0.69 C0.708,0.693,0.733,0.7,0.757,0.709 C0.764,0.712,0.77,0.714,0.777,0.717 L0.777,0.717 C0.782,0.719,0.787,0.721,0.792,0.723 C0.807,0.729,0.822,0.736,0.836,0.743 C0.87,0.76,0.903,0.778,0.936,0.8 C0.94,0.802,0.944,0.805,0.948,0.808 L0.948,0.808 L0.949,0.808 C0.955,0.812,0.961,0.815,0.967,0.819 C0.978,0.826,0.989,0.832,1,0.837 V0 C0.989,0.005,0.977,0.008,0.966,0.013 C0.937,0.023,0.909,0.036,0.88,0.051 C0.874,0.054,0.867,0.058,0.861,0.061 C0.859,0.062,0.856,0.064,0.854,0.065 C0.845,0.07,0.837,0.075,0.828,0.08 C0.828,0.08,0.827,0.08,0.827,0.081 C0.821,0.084,0.814,0.088,0.808,0.092 C0.806,0.093,0.804,0.095,0.802,0.096 C0.801,0.096,0.8,0.097,0.8,0.097 C0.798,0.098,0.796,0.1,0.794,0.101 C0.789,0.104,0.785,0.107,0.78,0.11 L0.779,0.11 C0.778,0.111,0.776,0.112,0.775,0.113 C0.774,0.114,0.772,0.115,0.771,0.116 C0.764,0.12,0.757,0.125,0.751,0.13 C0.749,0.131,0.747,0.132,0.745,0.133 C0.744,0.134,0.744,0.135,0.743,0.135 C0.735,0.14,0.728,0.146,0.721,0.151 C0.72,0.152,0.719,0.152,0.718,0.153 C0.717,0.154,0.716,0.154,0.715,0.155 C0.708,0.16,0.701,0.165,0.694,0.17 C0.693,0.171,0.692,0.172,0.691,0.172 C0.69,0.173,0.689,0.173,0.689,0.174 C0.688,0.175,0.687,0.175,0.686,0.176 C0.68,0.18,0.674,0.184,0.667,0.189 C0.666,0.19,0.664,0.191,0.662,0.193 C0.661,0.193,0.661,0.194,0.66,0.194 C0.649,0.202,0.638,0.209,0.627,0.216 C0.624,0.219,0.62,0.221,0.617,0.223 C0.615,0.224,0.614,0.225,0.613,0.226 C0.61,0.228,0.607,0.23,0.604,0.231 C0.596,0.237,0.588,0.242,0.579,0.247 C0.565,0.256,0.551,0.264,0.537,0.272 C0.531,0.276,0.524,0.279,0.518,0.282 C0.516,0.283,0.515,0.284,0.514,0.284 C0.497,0.292,0.48,0.298,0.463,0.303 C0.441,0.308,0.42,0.313,0.398,0.315 H0.346 C0.332,0.313,0.318,0.311,0.304,0.309 C0.279,0.304,0.255,0.296,0.231,0.287 C0.219,0.282,0.208,0.278,0.197,0.273 C0.179,0.265,0.16,0.256,0.142,0.246 C0.134,0.242,0.127,0.238,0.119,0.234 C0.11,0.229,0.101,0.224,0.092,0.218 C0.091,0.218,0.091,0.218,0.091,0.218 C0.09,0.217,0.09,0.217,0.089,0.217 C0.086,0.215,0.083,0.213,0.08,0.211 C0.074,0.207,0.067,0.203,0.061,0.199 C0.06,0.199,0.06,0.198,0.059,0.198 C0.057,0.197,0.055,0.195,0.053,0.194 C0.045,0.189,0.037,0.184,0.029,0.179 C0.023,0.176,0.017,0.172,0.011,0.169 C0.008,0.168,0.004,0.165,0,0.164 V1"></path></clipPath>
+
+	  <clipPath id="map-clip-path-mob" clipPathUnits="objectBoundingBox"><path d="M1,0.111 C0.984,0.118,0.967,0.124,0.951,0.13 C0.944,0.133,0.936,0.136,0.929,0.139 C0.925,0.14,0.92,0.141,0.916,0.143 C0.914,0.144,0.912,0.144,0.91,0.145 C0.88,0.155,0.85,0.161,0.819,0.167 C0.781,0.174,0.743,0.179,0.705,0.182 H0.612 C0.595,0.18,0.577,0.179,0.56,0.177 C0.553,0.176,0.545,0.175,0.537,0.174 C0.494,0.169,0.451,0.16,0.408,0.148 C0.403,0.147,0.397,0.145,0.392,0.144 C0.378,0.14,0.363,0.136,0.349,0.132 C0.317,0.123,0.285,0.112,0.254,0.101 C0.253,0.101,0.252,0.1,0.251,0.1 C0.241,0.097,0.232,0.093,0.223,0.09 C0.219,0.088,0.215,0.087,0.211,0.085 C0.207,0.084,0.203,0.082,0.199,0.081 C0.187,0.076,0.174,0.071,0.162,0.066 C0.162,0.066,0.161,0.066,0.16,0.066 C0.16,0.065,0.159,0.065,0.159,0.065 C0.158,0.065,0.158,0.065,0.158,0.064 C0.154,0.063,0.151,0.062,0.147,0.06 C0.145,0.059,0.144,0.059,0.142,0.058 C0.13,0.053,0.119,0.048,0.108,0.043 C0.107,0.043,0.106,0.043,0.105,0.042 C0.105,0.042,0.104,0.042,0.104,0.042 C0.101,0.041,0.098,0.039,0.094,0.038 C0.08,0.031,0.066,0.025,0.051,0.019 C0.048,0.018,0.046,0.017,0.043,0.016 C0.035,0.013,0.028,0.01,0.02,0.008 C0.018,0.007,0.017,0.007,0.015,0.006 C0.01,0.004,0.005,0.003,0,0.001 V1 C0.003,1,0.007,1,0.01,0.999 L0.01,0.999 C0.012,0.998,0.014,0.998,0.017,0.997 C0.068,0.985,0.119,0.972,0.169,0.955 C0.175,0.953,0.182,0.951,0.189,0.949 C0.19,0.948,0.191,0.948,0.192,0.948 C0.261,0.925,0.33,0.897,0.397,0.867 C0.411,0.861,0.425,0.854,0.439,0.848 L0.439,0.848 L0.439,0.848 L0.439,0.848 C0.446,0.844,0.453,0.841,0.46,0.838 C0.512,0.812,0.564,0.787,0.616,0.763 C0.629,0.757,0.642,0.751,0.655,0.745 L0.655,0.745 L0.655,0.745 L0.655,0.745 C0.663,0.742,0.67,0.738,0.678,0.735 C0.71,0.72,0.743,0.707,0.776,0.693 L0.78,0.692 C0.82,0.676,0.86,0.66,0.902,0.65 C0.934,0.643,0.967,0.637,1,0.632 V0.111"></path></clipPath>
+
+	  <g id="icon-phone">
+        <path d="M0 7.2C.01 4.33 1.47 1.61 3.93.1c3.18-.16 4.66 3.43 6.94 5.15 2.3 2.14-.76 4.43-2.3 5.84 2.2 4.52 5.94 8.17 10.41 10.46 1.5-1.3 2.67-3.71 5.04-3.05 2 2.11 4.65 3.86 5.98 6.47v1.35c-1.25 1.27-2.37 3.12-4.39 3.15.04.13.11.4.14.53h-.37c.03-.12.11-.36.15-.48-5.69 1.44-11.13-2.19-15.37-5.63C5.61 19.67.75 14.77 0 8.31V7.2z"/>
+    </g>
+
+    <g id="icon-map">
+    	<path d="M.52 12.99C-1.07 6.64 4.45-.2 10.99.05c6.56-.28 11.92 6.51 10.59 12.84C20.11 19.6 14.32 24.05 11.29 30h-.54C7.8 24.05 2.24 19.55.52 12.99m7.99-7.28c-3.63 1.68-4.19 7.19-.89 9.5 3.05 2.61 8.26.62 8.93-3.3 1.17-4.38-4.08-8.4-8.04-6.2z"/>
+    </g>
+
+    <g id="icon-email">
+		<path opacity=".16" d="M0 0h1.95C1.81 1.28 1.16 1.85 0 1.72V0zM27.62 0H30v1.6c-1.12.05-1.92-.49-2.38-1.6zM0 3.92c2.96 4.68 8.37 6.89 12.6 10.22 2.91 2.46 5.87-.84 8.27-2.35C24.03 9.2 28.55 7.65 30 3.5v4.64c-2.81 2.19-5.85 4.06-8.71 6.18-1.94 1.31-3.86 2.96-6.28 3.2-2.43-.27-4.35-1.92-6.29-3.24C5.85 12.16 2.81 10.29 0 8.09V3.92zM0 22.11c1.3.1 1.88.73 1.75 1.89H0v-1.89zM28.03 24c.15-1.16.81-1.76 1.97-1.8V24h-1.97z"/>
+		<path d="M1.95 0h25.67c.46 1.11 1.26 1.65 2.38 1.6v1.9c-1.45 4.15-5.97 5.7-9.13 8.29-2.4 1.51-5.36 4.81-8.27 2.35C8.37 10.81 2.96 8.6 0 3.92v-2.2c1.16.13 1.81-.44 1.95-1.72z"/>
+		<path d="M0 8.09c2.81 2.2 5.85 4.07 8.72 6.19 1.94 1.32 3.86 2.97 6.29 3.24 2.42-.24 4.34-1.89 6.28-3.2 2.86-2.12 5.9-3.99 8.71-6.18V22.2c-1.16.04-1.82.64-1.97 1.8H1.75c.13-1.16-.45-1.79-1.75-1.89V8.09z"/>
+	</g>
+
+</svg>
+
+
+
+<div class="container container--inner">
+
+	
+	<section class="block">
+			<div class="block__holder">
+			
+				<header class="main-header main-header--inner">
+				  <div class="main-header__navigation">
+				    <div class="container container--header">
+				      <div class="main-header__wrap">
+				        <a href="#" class="main-header__logo">
+				          <div class="main-header__image">
+				          	<img src="img/icons/logo.png" alt="">
+				          </div>
+				          <div class="main-header__text">
+				          	<p class="main-header__title">v-buh.com.ua</p>
+				          	<p class="main-header__topic">Бухгалтерские услуги</p>
+				          </div>
+				        </a>
+				        <div class="main-header__user">
+				          <div class="mobile-wrap">
+				            <h3 class="main-header__description">Меню</h3>
+				            <div class="main-nav__toggle">
+				              <span class="line-burger"></span>
+				            </div>
+				          </div>
+				          <ul class="main-header__list">
+				            <li>
+				              <a class="main-header__link main-header__link--active" href="">Главная</a>
+				            </li>
+				            <li>
+				              <a class="main-header__link" href="">Услуги</a>
+				            </li>
+				            <li>
+				              <a class="main-header__link" href="">Цены</a>
+				            </li>
+				            <li>
+				              <a class="main-header__link" href="">Акции</a>
+				            </li>
+				            <li>
+				              <a class="main-header__link" href="">Калькулятор</a>
+				            </li>
+				            <li>
+				              <a class="main-header__link" href="">Публикации</a>
+				            </li>
+				            <li>
+				              <a class="main-header__link" href="">Контакты</a>
+				            </li>
+				          </ul>
+				          <div class="main-header__content">
+				            <div class="main-header__button">
+				              <button type="button"></button>
+				            </div>
+				            <form class="main-header__search">
+				              <div class="main-header__search-wrap">
+				                <input class="main-header__input" placeholder="Поиск" type="search" name="s" id="s">
+				                <button class="main-header__search-btn"></button>
+				              </div>
+				            </form>
+				          </div>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+				</header>
+
+				<section class="info">
+					<div class="container">
+						<div class="info__wrap">
+							<div class="info__item info__item--image">
+								<div class="info__block">
+									<img src="img/man.png" alt="">
+								</div>
+								<div class="info__logo">
+									<img src="img/icons/main-logo.png" alt="">
+								</div>
+							</div>
+							<div class="info__item info__item--content">
+								<p class="info__title">Бизнес с нами  становиться легче!</p>
+								<div class="info__text">
+									<p>Бухгалтерский аутсорсинг, Финансовые услуги. Юридическое сопровождение, Инициативный аудит</p>
+								</div>
+								<p class="info__phone">093 720 90 30</p>
+								<ul class="info__list">
+									<li>
+										<a class="info__link" href="">Наши тарифы</a>
+									</li>
+									<li>
+										<a class="info__link"  href="">Калькулятор</a>
+									</li>
+								</ul>
+								<div class="info__triangles info__triangles--top">
+									<img src="img/icons/triangles-info.png" alt="">
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</section>
+			</div>
+	</section>
+
+	<section class="services">
+		<div class="services__block">
+			<div class="container">
+				<div class="services__inner">
+					<div class="services__wrap">
+						<div class="services__item">
+							<h3 class="services__title">Бухгалтерские услуги</h3>
+							<div class="services__text">
+								<p>Постановка бухгалтерского и налогового учета осуществляется при создании предприятия или расширении деятельности предприятия.</p>
+							</div>
+						</div>
+						<div class="services__item">
+							<h3 class="services__title">Налоговый консалтинг</h3>
+							<div class="services__text">
+								<p>Постановка Постановка Постановка Постановка Постановка Постановка бухгалтерского и налогового учета осуществляется при создании предприятия или расширении деятельности предприятия.</p>
+							</div>
+						</div>
+						<div class="services__item">
+							<h3 class="services__title">Аудит</h3>
+							<div class="services__text">
+								<p>Постановка бухгалтерского и налогового учета осуществляется при создании предприятия или расширении деятельности предприятия.</p>
+							</div>
+						</div>
+						<div class="services__item">
+							<h3 class="services__title">Юридические услуги</h3>
+							<div class="services__text">
+								<p>Постановка бухгалтерского и налогового учета осуществляется при создании предприятия или расширении деятельности предприятия.</p>
+							</div>
+						</div>
+						<div class="services__item">
+							<h3 class="services__title">Экспертные услуги</h3>
+							<div class="services__text">
+								<p>Постановка бухгалтерского и налогового учета осуществляется при создании предприятия или расширении деятельности предприятия.</p>
+							</div>
+						</div>
+						<div class="services__item">
+							<h3 class="services__title">Сопровождение проверок</h3>
+							<div class="services__text">
+								<p>Постановка бухгалтерского и налогового учета осуществляется при создании предприятия или расширении деятельности предприятия.</p>
+							</div>
+						</div>
+					</div><!--end services__wrap-->
+					<div class="services__triangles services__triangles--top">
+						<img src="img/triangles.png" alt="">
+					</div>
+					<div class="services__triangles services__triangles--right">
+						<img src="img/triangles.png" alt="">
+					</div>
+					<div class="services__triangles services__triangles--bottom">
+						<img src="img/triangles.png" alt="">
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+	</section>
+
+	<section class="plan">
+		<div class="container">
+			<div class="plan__holder">
+				<h3 class="plan__title">Тарифные планы</h3>
+				<div class="plan__wrap owl-carousel">
+					<a href="" class="plan__item">
+						<h4 class="plan__subtitle">Юр.услуги</h4>
+						<ul class="plan__list">
+							<li class="plan__box">Консультации</li>
+							<li class="plan__box">Регистрация ООО/СПД</li>
+							<li class="plan__box">Внесение изменений в уставные документы</li>
+							<li class="plan__box">Изменение видов деятельности</li>
+							<li class="plan__box">Разработка хозяйственных договоров</li>
+						</ul>
+						<div class="plan__inner">
+							<p class="plan__price">600 <span>грн. / в месяц</span></p>
+							<button class="plan__btn"></button>
+						</div>
+					</a>
+					<a href="" class="plan__item">
+						<h4 class="plan__subtitle">Юр.услуги</h4>
+						<p class="plan__best">Лучший выбор</p>
+						<ul class="plan__list">
+							<li class="plan__box">Консультации</li>
+							<li class="plan__box">Регистрация ООО/СПД</li>
+							<li class="plan__box">Внесение изменений в уставные документы</li>
+							<li class="plan__box">Изменение видов деятельности</li>
+							<li class="plan__box">Разработка хозяйственных договоров</li>
+							<li class="plan__box">Разработка хозяйственных договоров</li>
+						</ul>
+						<div class="plan__inner">
+							<p class="plan__price">1 200 <span>грн. / в месяц</span></p>
+							<button class="plan__btn"></button>
+						</div>
+					</a>
+					<a href="" class="plan__item">
+						<h4 class="plan__subtitle">Юр.услуги</h4>
+						<ul class="plan__list">
+							<li class="plan__box">Консультации</li>
+							<li class="plan__box">Регистрация ООО/СПД</li>
+							<li class="plan__box">Внесение изменений в уставные документы</li>
+							<li class="plan__box">Изменение видов деятельности</li>
+							<li class="plan__box">Разработка хозяйственных договоров</li>
+						</ul>
+						<div class="plan__inner">
+							<p class="plan__price">600 <span>грн. / в месяц</span></p>
+							<button class="plan__btn"></button>
+						</div>
+					</a>
+				</div><!--end plan__wrap-->
+				<div class="plan__triangles">
+					<img src="img/icons/triangles-info.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="work">
+		<div class="work__block">
+			<div class="container">
+				<div class="work__inner">	
+					<h3 class="work__title">Как мы работаем</h3>
+					<div class="work__wrap">
+						<div class="work__item">
+							<h4 class="work__subtitle">Оформление заявки</h4>
+							<div class="work__text">
+								<p>Вы оставляете заявку на сайте или по телефону</p>
+							</div>
+						</div>
+						<div class="work__item">
+							<h4 class="work__subtitle">Встреча</h4>
+							<div class="work__text">
+								<p>Назначаем встречу, разрабатываем индивидуальную модель аутсорсинга</p>
+							</div>
+						</div>
+						<div class="work__item">
+							<h4 class="work__subtitle">Согласование</h4>
+							<div class="work__text">
+								<p>Согласование окончательной стоимости услуг и процесс обмена документами</p>
+							</div>
+						</div>
+
+						<div class="work__item">
+							<h4 class="work__subtitle">Заключение договора</h4>
+							<div class="work__text">
+								<p>Заключаем договор на обслуживание</p>
+							</div>
+						</div>
+
+						<div class="work__item">
+							<h4 class="work__subtitle">Назначение бухгалтера</h4>
+							<div class="work__text">
+								<p>За Вами закрепляется сопровождающий бухгалтер</p>
+							</div>
+						</div>
+
+						<div class="work__item">
+							<h4 class="work__subtitle">Документация</h4>
+							<div class="work__text">
+								<p>Передаете нам необходимую документацию и мы приступаем к работе</p>
+							</div>
+						</div>
+					</div><!--end plan__wrap-->
+					<div class="work__triangles work__triangles--top">
+						<img src="img/triangles.png" alt="">
+					</div>
+					<div class="work__triangles work__triangles--bottom">
+						<img src="img/triangles.png" alt="">
+					</div>
+					<div class="work__triangles work__triangles--right">
+						<img src="img/triangles.png" alt="">
+					</div>
+				</div><!--end work__inner-->
+			
+			</div><!--end container-->
+		</div>
+	
+	</section>
+
+	<section class="partners">
+		<div class="container">
+			<h3 class="partners__title">Наши партнеры</h3>
+			<div class="partners__wrap owl-carousel">
+				<div class="partners__item">
+					<img src="img/icons/hdtime.png" alt="">
+				</div>
+				<div class="partners__item">
+					<img src="img/icons/outdoors.png" alt="">
+				</div>
+				<div class="partners__item">
+					<img src="img/icons/bakery.png" alt="">
+				</div>
+				<div class="partners__item">
+					<img src="img/icons/bakery.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="about">
+		<div class="about__block">
+			<div class="about__wrap">
+				<div class="container">
+					<div class="about__inner">
+						<div class="about__item about__item--data">
+							<h3 class="about__title">О компании</h3>
+							<div class="about__text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+								<p>eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+						<div class="about__item about__item--content">
+							<div class="about__wrap-bg">
+								<div class="about__bg">
+									<div class="about__image">
+										<img src="img/icons/about-logo.png" alt="">
+									</div>
+									<p class="about__desc">Ваш бухгалтер</p>
+								</div>
+							</div>
+						
+						</div>
+						
+					</div><!--end about__inner-->
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="reviews">
+		<div class="container">
+			<h3 class="reviews__title">Отзывы</h3>
+			<div class="reviews__wrap owl-carousel">
+				<div class="reviews__item">
+					<h4 class="reviews__subtitle">Marco Yates</h4>
+					<p class="reviews__position">HR Manager</p>
+					<div class="reviews__text">
+						<p>Type here some info about this team member, the man very important person of our company.</p>
+					</div>
+				</div>
+				<div class="reviews__item">
+					<h4 class="reviews__subtitle">Marco Yates</h4>
+					<p class="reviews__position">HR Manager</p>
+					<div class="reviews__text">
+						<p>Type here some info about this team member, the man very important person of our company.</p>
+					</div>
+				</div>
+				<div class="reviews__item">
+					<h4 class="reviews__subtitle">Marco Yates</h4>
+					<p class="reviews__position">HR Manager</p>
+					<div class="reviews__text">
+						<p>Type here some info about this team member, the man very important person of our company.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="main-footer">	
+		<div class="main-footer__block">
+			<div class="container">
+				<h3 class="main-footer__title">Напишите нам</h3>
+				<div class="main-footer__wrap">
+					<div class="main-footer__item">
+						<form action="" class="main-footer__form">
+							<div class="main-footer__box">
+		                        <label for="f_name">Ваше имя</label>
+		                        <input type="text" id="f_name">
+		                    </div>
+		                    <div class="main-footer__box">
+		                        <label for="f_phone">Телефон</label>
+		                        <input type="text" id="f_phone">
+		                    </div>
+		                    <div class="main-footer__box">
+		                        <label for="f_msg">Сообщение</label>
+		                        <textarea name="" id="f_msg"></textarea>
+		                    </div>
+		                    <button class="main-footer__btn">Отправить</button>
+						</form>
+					</div>
+					<div class="main-footer__item">
+						<div class="main-footer__col">
+							<div class="main-footer__icon">
+								<svg viewBox="0 0 30 30">
+					                <use xlink:href="#icon-phone" />
+					             </svg>
+							</div>
+							<p class="main-footer__data main-footer__data--phone">38 063 455 45 45</p>
+						</div>
+						<div class="main-footer__col">
+							<div class="main-footer__icon">
+								<svg viewBox="0 0 30 30">
+					                <use xlink:href="#icon-phone" />
+					             </svg>
+							</div>
+							<p class="main-footer__data main-footer__data--phone">38 063 455 45 45</p>
+						</div>
+						<div class="main-footer__col">
+							<div class="main-footer__icon">
+								<svg viewBox="0 0 30 24">
+					                <use xlink:href="#icon-email" />
+					             </svg>
+							</div>
+							<p class="main-footer__data main-footer__data--email">info@site.com.ua</p>
+						</div>
+						<div class="main-footer__col">
+							<div class="main-footer__icon">
+								<svg viewBox="0 0 22 30">
+					                <use xlink:href="#icon-map" />
+					             </svg>
+							</div>
+							<p class="main-footer__data main-footer__data--address">Соломенская площадь, дом 2, этаж 7, офис 706</p>
+						</div>
+					</div>
+					<div class="main-footer__item">
+						<div class="main-footer__inner">
+							<div class="main-footer__logo">
+								<img src="img/icons/footer-logo.png" alt="">
+							</div>
+							<p class="main-footer__content">Ваш бухгалтер</p>
+						</div>
+						<div class="main-footer__desc">
+							<p>Для получения дополнительной информации, вы можете связаться с нами любым удобным для вас способом. Мы работаем с 09.00 до 18.00 с понедельника по пятницу.</p>
+						</div>
+					</div>
+				</div><!--end main-footer__wrap-->
+				<div class="main-footer__info">
+					<p>© Copyright 2019-2020 FIN-SERVICE. All rights reserved. Any materials, files and services contained on this site may be reproduced in any form, by any means, in whole or in part, without the prior written consent of FIN-SERVIS LLC. the site is required. Translation, alteration (modification), any modification of the materials of the site, as well as any other actions, including deletion, modification to inconspicuous information and copyright and copyright holders are not allowed</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</div>
+
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/jquery.formstyler.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
+	</body>
+</html>
